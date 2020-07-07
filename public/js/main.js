@@ -31,6 +31,7 @@ function resize(){
 
 // отрисовка кадра 
 function drawScene(){
+	console.log("Отрисовка сцены");
 	webgl.drawArrays(webgl.TRIANGLES, 0, 6);
 }
 
@@ -130,6 +131,7 @@ function init(){
 
 	// указываем параметры 
 	webgl.bindBuffer(webgl.ARRAY_BUFFER, buffer); 
+
 
 	webgl.bufferData(webgl.ARRAY_BUFFER, new Float32Array(vertices), webgl.STATIC_DRAW);
 
